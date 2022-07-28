@@ -1,0 +1,80 @@
+Dervent Park:Dervent Park West:200:70
+Dervent Park:Dervent Park East:460:70
+
+Brierley Vale:Candy Store:268:165
+Brierley Vale:Bakers:430:165
+Brierley Vale:Corner:550:165
+Brierley Vale:ZOO:700:165
+
+Spruce Barton:Spruce Barton West:275:265
+Spruce Barton:Spruce Barton East:525:265
+
+Birdwood Firs:Flower Gardens I:95:330
+Birdwood Firs:Birdwood Firs:222:330
+Birdwood Firs:Centre I:434:330
+Birdwood Firs:City Museum:730:330
+Birdwood Firs:Town Library:856:330
+
+Glebe Vale:Centre III:450:370
+Glebe Vale:Centre V:575:370
+Glebe Vale:IBM:720:370
+Glebe Vale:Paradise:940:370
+
+Ford Fold:Sport Centre:240:500
+Ford Fold:High School:317:500
+Ford Fold:University Park I:520:500
+Ford Fold:University Park II:625:500
+
+Hamilton Top:University Library:473:585
+Hamilton Top:Horse Park:755:585
+Hamilton Top:Cinema City:935:585
+
+Marina Downs:Football Stadion:155:655
+Marina Downs:Kids Zone:340:655
+
+Factory Hall:Factory Hall:236:730
+Factory Hall:Technology Park West:420:730
+Factory Hall:Technology Park Middle:539:730
+Factory Hall:Technology Park East:833:730
+
+Hunter Cross:Hunter Cross:65:85
+Hunter Cross:Flower Gardens II:65:234
+Hunter Cross:Family Zone North:65:411
+Hunter Cross:Family Zone South:65:572
+
+Newcrest:Newcrest North:180:300
+Newcrest:Newcrest Church:180:382
+Newcrest:Newcrest South:180:536
+
+Ferrymuir:Dance Studio:250:313
+Ferrymuir:Gym:250:430
+
+Shire Garden:Shire Square:310:400
+Shire Garden:Shire Garden:310:624
+Shire Garden:Car Factory:310:711
+
+Bakers Holt:Butlers:415:216
+Bakers Holt:Centre II:415:350
+Bakers Holt:Centre IV:415:460
+Bakers Holt:Mini Park:415:640
+
+Whitehouse Corner:Flower Shop:500:151
+Whitehouse Corner:Centre Square:500:308
+
+Middlefield Hawthorns:Middlefield:590:342
+Middlefield Hawthorns:Stationary:590:468
+Middlefield Hawthorns:University Cafe:590:578
+Middlefield Hawthorns:Girls College:590:700
+
+Alicia Avanue:Boys College:700:360
+Alicia Avanue:University Stadion:700:550
+
+Anson Chase:Animal Shop:750:260
+Anson Chase:Central Park I:750:460
+
+Shakespeare Fold:Central Park II:875:480
+Shakespeare Fold:Central Park III:875:542
+Shakespeare Fold:Zetor:875:712
+
+Pool Crescent:Pool Town:960:360
+Pool Crescent:Theatre:960:550

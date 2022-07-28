@@ -1,0 +1,5 @@
+Orange Line=Flower Gardens I:Birdwood Firs:Centre I:City Museum:Town Library:Pool Town:Theatre:Cinema City:Horse Park:University Library
+Green Line=Sport Centre:High School:University Park I:University Park II:Central Park I:Animal Shop:ZOO:Corner:Bakers:Candy Store:Dance Studio:Gym
+Blue Line=Centre Square:Flower Shop:Dervent Park East:Dervent Park West:Hunter Cross:Flower Gardens II:Family Zone North:Family Zone South:Football Stadion:Kids Zone:Mini Park:Centre IV:Centre II:Butlers
+Purple Line=Central Park II:Central Park III:Zetor:Technology Park East:Technology Park Middle:Technology Park West:Factory Hall:Newcrest South:Newcrest Church:Newcrest North:Spruce Barton West:Spruce Barton East:Middlefield:Stationary:University Cafe:Girls College
+Red Line=Paradise:IBM:Centre V:Centre III:Shire Square:Shire Garden:Car Factory
