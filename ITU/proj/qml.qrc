@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Reminder.qml</file>
+        <file>Note.qml</file>
+        <file>Button.qml</file>
+        <file>Frame.qml</file>
+        <file>Pages.qml</file>
+        <file>Inputnote.qml</file>
+        <file>Inputreminder.qml</file>
+    </qresource>
+</RCC>
