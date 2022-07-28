@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Project: IJA - Public transportation
+    Authors: Michal Cibák    - xcibak00
+             Erika Fašánková - xfasan00
+    Content: Build instructions for Ant.
+-->
+<project name="ija-app" basedir="." default="help"> <!-- project name = name of jar -->
+    <property name="main-class" value="transMap.Main"/>
+    <property name="source-dir" value="src"/>
+    <property name="class-dir" value="build"/>
+    <property name="jar-dir" value="dest"/>
+    <property name="doc-dir" value="doc"/>
+    <target name="help">
+        <echo>For compilation, use "ant compile".</echo>
+        <echo>For application launch, use "ant run".</echo>
+        <echo>For cleaning of build and dest directories, use "ant clean".</echo>
+    </target>
+    <target name="class">
+        <echo>Making class files.</echo>
+        <javac includeantruntime="false" srcdir="${source-dir}" destdir="${class-dir}">
+            <compilerarg value="-Xlint:unchecked"/>  <!-- TODO - temporary, delete -->
+        </javac>
+    </target>
+    <target name="jar">
+        <echo>Making jar file.</echo>
+        <jar basedir="${class-dir}" destfile="${jar-dir}/${ant.project.name}.jar">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name="compile" depends="class, jar">
+        <echo>Program compiled.</echo>
+    </target>
+    <target name="run">
+        <echo>Running program.</echo>
+        <java jar="${jar-dir}/${ant.project.name}.jar" fork="true"/>
+    </target>
+    <target name="docgen">
+        <javadoc sourcepath="${source-dir}" destdir="${doc-dir}" />
+    </target>
+    <target name="clean">
+        <echo>Deleting class and jar files.</echo>
+        <delete dir="${class-dir}"/>
+        <mkdir dir="${class-dir}"/>
+        <delete dir="${jar-dir}"/>
+        <mkdir dir="${jar-dir}"/>
+    </target>
+</project>
