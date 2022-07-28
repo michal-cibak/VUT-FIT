@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0070)https://www.fit.vutbr.cz/study/courses/IIS/private/projekt/doc.html.cs -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Projekt IIS</title>
+    <style type="text/css">
+    	table { border-collapse: collapse; }
+    	td, th { border: 1px solid black; padding: 0.3em 0.5em; text-align: left; }
+    	dt { font-weight: bold; margin-top: 0.5em; }
+    </style>
+</head>
+<body>
+<!-- saved from url=(0070)https://www.fit.vutbr.cz/study/courses/IIS/private/projekt/doc.html.cs -->
+<!-- saved from url=(0070)https://www.fit.vutbr.cz/study/courses/IIS/private/projekt/doc.html.cs --><!-- Zkontrolujte prosím nastavení kódování v hlavičce dokumentu
+     podle použitého editoru -->
+<h1>1. Festival: rezervace vstupenek na hudební festivaly</h1>
+<!-- Nahradte názvem svého zadání -->
+<dl>
+<dt>Autoři</dt>
+<dd>Michal Cibák <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti --> <a href="mailto:xcibak00@stud.fit.vutbr.cz">xcibak00@stud.fit.vutbr.cz</a> - Návrh databáze, tvorba databáze, zakládání a tvoření php skriptů, tvorba functions.php (opakující se funkce) pro usnadnění práce, zaměření se na správu festivalů a interpretů, komentování php skriptů</dd>
+<dd>Tomáš Staněk <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti --> <a href="mailto:xstane44@stud.fit.vutbr.cz">xstane44@stud.fit.vutbr.cz</a> - Úprava návrhu do finální podoby, naplnění databáze, doplnění a rozšíření php stránek, zaměření se na část rezervací a správa tiketů a dokumentace</dd>
+<dd>Aleš Řezáč <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti --> <a href="mailto:xautor03@stud.fit.vutbr.cz">xrezac21@stud.fit.vutbr.cz</a> - Úprava návrhu do finální podoby, grafika a design webu, Překlad a úprava php prvků, testování stránek</dd>
+<dt>URL aplikace</dt>
+<dd><a href="http://www.stud.fit.vutbr.cz/~xautor01/IIS">http://www.stud.fit.vutbr.cz/~xcibak00/IIS/index.php</a></dd>
+</dl>
+<h2>Uživatelé systému pro testování</h2>
+<table>
+<tbody>
+<tr>
+<th>Login</th>
+<th>Heslo</th>
+<th>Role</th>
+</tr>
+<tr>
+<td>Leader</td>
+<td>admin</td>
+<td>Administrátor</td>
+</tr>
+<tr>
+<td>Organizer</td>
+<td>org</td>
+<td>Pořadatel</td>
+</tr>
+<tr>
+<td>CashMan</td>
+<td>cash</td>
+<td>Pokladník</td>
+</tr>
+<tr>
+<td>User</td>
+<td>user</td>
+<td>Zákazník</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Diagram případů užití byl vytvořen podle zadání.</strong></p>
+<p><img src="UCD.png" alt="Use-case diagram" width="600"/></p>
+<h2>Implementace</h2>
+<p>index.php -- Úvodní strana projektu jsou zde zobrazeny probíhájící a nadcházející festivaly<br /><br /><strong>Vstupní MENU</strong><br /><br /><strong>login.php</strong> -- Přihlášení jakéhokoliv uživatele<br /><strong>register.php</strong> -- registrace uživatele, každý uživatel je registrován jako User. Administrátor může měnit práva.<br /><br /><strong>Po přihlášení</strong><br /><strong>edit.php</strong> -- uživatel může změnit své heslo a emailovou adresu<br /><br /><strong>logout.php</strong> -- Odhlásí uživatele, vrátí práva návštěvníka<br /><br /><strong>Funkce</strong><br /><strong>functions.php</strong> -- Obsahuje funkce programu. Nejčastěji byly používány print_table(tisk tabulky) a add_database (přidání něčeho nového do databáse) <br /><br /><strong>Ostatní php soubory</strong><br /><strong>festivaly.php</strong> -- úvodní strana obsahuje seznam veškerých festivalů v posledních letech seřazeno od nejnovějších. V případě, že máte vyšší práva, je zde možné přidat nový festival. Při rozkliknutí detailů je vidět podrobnější popis.Při právech pořadatele je tu navíc možnost přidání interpreta na festival. Tam je ale potřeba uvést stage a datum, kdy na festivalu hraje ve formátu(yyyy-mm-dd hh:mm:ss).<br /><strong>tickets.php</strong> -- V momentě, kdy si kupujete vstupenku. Tato strana obsahuje informace o vstupence. Kolik si jich rezervujete a jakého typu jsou. Při kliknutí na Odeslat. Přijde zpravidla do 15 minut email o rezervaci vstupenek(email je pouze informativní). Po rezervaci si má možnost uživatel prohlédnout rezervovanou vstupenku v Menu záložka Moje rezervace. V případě, že si uživatel rezervuje vstupenku na festival, který je již zaplněn je upozorněn vyskakovacím oknem.<br /><strong>stat_reserv.php,Change_stateN.php,Change_stateU.php</strong> -- Strany, kam mají přístup uživatelé s právy pokladního a více. Mají možnost sledovat jednolivé rezervace uživatelů a upravit zda již uživatel uhradil vstupenky. Je zde také možnost zamítnout. Tím jsou vstupenky vymazány. Situace může nastat v případě že uživatel nebo návštěvník dlouho vstupenku neuhradili.<br /><strong>users.php</strong> -- Strana kam má přístup pouze administrátor. Nachází se v horní liště. Upravují se zde práva uživatelů.<br /><strong>bands.php</strong> -- zde jsou všechny kapely, které je možné přidat na festivaly.<br /><br /><strong>edit_festival.php,edit_interpret.php</strong> -- zde jsou úpravy parametrů festivalů a interpretů.</p>
+<h3>ER diagram</h3>
+<p><img src="ERD.png" alt="Entity-relationship diagram" width="750"/></p>
+<p><strong>Z ER diagramu vychází finální schéma databáze.</strong></p>
+<h3>Databáze</h3>
+<p><img src="scheme.png" alt="schema" width="1502" height="434" /></p>
+<h2>Instalace</h2>
+<p>Obsah složky "web" přesuneme na požadované místo na webovém serveru. Požadovaná verze PHP je 5.3.29 (využívaná na serveru fakulty).</p>
+<p>Inicializace databáze: Prostředníctvím služby phpmyadmin si založíme databázi s požadovaným jménem, ke ktorému se budeme připojovat ze skriptu functions.php (údaje sa musí shodovat). Následně ji inicializujeme (vytvoříme tabulky a naplníme je daty) použitím poskytnutého sql ve složce "database".</p>
+<h2>Známé problémy</h2>
+<p>Zobrazení obrázků: nahrávání obrázků je funkční, avšak nejsou dostatečná práva a krom vlastníka je nikdo nevidí.</p>
+<p>Mazání festivalů: Festivaly se nedají smazat, jelikož by došlo k větším škodám než-li k užitku.</p>
+</body>
+</html>
